@@ -1,0 +1,71 @@
+<div class="text-div">
+  <span>HTML5</span>
+</div>
+<div class="container">
+  <div class="inputs">
+    <label>Entrada:</label>
+    <textarea
+      (keyup)="validate(input, inputButtons)"
+      #input
+      placeholder="insira seu HTML aqui..."
+    ></textarea>
+
+    <div class="buttons">
+      <button
+        #inputButtons
+        [style.cursor]="input.value === '' ? 'not-allowed' : 'pointer'"
+        [style.backgroundColor]="input.value === '' ? '#333' : '#009688'"
+        type="button"
+        (click)="minify(input, output)"
+      >
+        Minificar HTML
+      </button>
+
+      <button
+        #inputButtons
+        [style.cursor]="input.value === '' ? 'not-allowed' : 'pointer'"
+        [style.backgroundColor]="input.value === '' ? '#333' : '#009688'"
+        type="button"
+        (click)="clear(input, output)"
+      >
+        Limpar
+      </button>
+
+      <button
+      #inputButtons
+      [style.cursor]="input.value === '' ? 'not-allowed' : 'pointer'"
+      [style.backgroundColor]="input.value === '' ? '#333' : '#009688'"
+      type="button"
+      (click)="downloadAsHtml(input)"
+    >
+      Baixar Como .html
+    </button>
+    </div>
+  </div>
+  <div class="inputs">
+    <label for="html-output">Saída:</label>
+    <textarea (keyup)="validate(output, outputButtons)" #output [disabled]="isDisabled"></textarea>
+
+    <div class="buttons">
+      <button
+        #outputButtons
+        [style.cursor]="output.value === '' ? 'not-allowed' : 'pointer'"
+        [style.backgroundColor]="output.value === '' ? '#333' : '#009688'"
+        type="button"
+        (click)="copyToClipboard(output)"
+      >
+        Copiar para área de tranferência
+      </button>
+
+      <button
+        #outputButtons
+        [style.cursor]="output.value === '' ? 'not-allowed' : 'pointer'"
+        [style.backgroundColor]="output.value === '' ? '#333' : '#009688'"
+        type="button"
+        (click)="selectAll(output)"
+      >
+        Selecionar Tudo
+      </button>
+    </div>
+  </div>
+</div>
