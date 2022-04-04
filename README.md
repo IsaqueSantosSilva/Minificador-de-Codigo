@@ -2,8 +2,8 @@
 
 <br />
 
-Protótipo: https://isaquesantossilva.github.io/Tema-Escuro-com-LocalStorage/
+Protótipo: 
 
 <br />
 
-<img alt="" width="1000" src="https://github.com/IsaqueSantosSilva/Tema-Escuro-com-LocalStorage/blob/main/assets/images/cover.png">
+<img alt="" width="1000" src="https://github.com/IsaqueSantosSilva/Minificador-de-Codigo/blob/main/src/assets/cover.png">
