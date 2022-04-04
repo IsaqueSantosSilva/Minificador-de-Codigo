@@ -2,7 +2,7 @@
 
 <br />
 
-Protótipo: https://marvelous-fenglisu-1f15fa.netlify.app
+Protótipo: https://idyllic-croissant-964eb7.netlify.app/
 
 <br />
 
